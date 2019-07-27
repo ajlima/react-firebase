@@ -37,7 +37,7 @@ jobs:
       - run: yarn test
 
       - run:
-        name: 'Build Project'
+        name: 'Build'
         command: 'yarn build'
 
       - run:
