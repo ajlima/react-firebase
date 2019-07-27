@@ -37,9 +37,9 @@ jobs:
       - run: yarn test
 
       - run:
-        name: 'Build'
-        command: yarn build
+          name: 'Build'
+          command: yarn build
 
       - run:
-        name: 'Deploy to Firebase Hosting'
-        command: yarn run firebase deploy --token=$FIREBASE_TOKEN
+          name: 'Deploy to Firebase Hosting'
+          command: yarn run firebase deploy --token=$FIREBASE_TOKEN
