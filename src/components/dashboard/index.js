@@ -40,7 +40,7 @@ function Dashboard(props) {
 
 	useEffect(() => {
 		firebase.getCurrentUserQuote().then(setQuote)
-	})
+	}, [])
 
 	if(!firebase.getCurrentUsername()) {
 		// not logged in
